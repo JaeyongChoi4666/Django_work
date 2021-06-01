@@ -1,4 +1,11 @@
 MODULES_MANAGER_V3
+bookmark.__init__|C:\Users\ADMIN\django_work\mysite\bookmark\__init__.py
+bookmark.admin|C:\Users\ADMIN\django_work\mysite\bookmark\admin.py
+bookmark.apps|C:\Users\ADMIN\django_work\mysite\bookmark\apps.py
+bookmark.migrations.__init__|C:\Users\ADMIN\django_work\mysite\bookmark\migrations\__init__.py
+bookmark.models|C:\Users\ADMIN\django_work\mysite\bookmark\models.py
+bookmark.tests|C:\Users\ADMIN\django_work\mysite\bookmark\tests.py
+bookmark.views|C:\Users\ADMIN\django_work\mysite\bookmark\views.py
 manage|C:\Users\ADMIN\django_work\mysite\manage.py
 mysite.__init__|C:\Users\ADMIN\django_work\mysite\mysite\__init__.py
 mysite.asgi|C:\Users\ADMIN\django_work\mysite\mysite\asgi.py

@@ -7,4 +7,4 @@ class BookmarkAdmin(admin.ModelAdmin):
     #관리자 화면에 출력할 필드 목록(튜플 형식)
     list_display=('id','title','url')
     
-# admin.site.register(Bookmark, BookmarkAdmin)
+admin.site.register(Bookmark, BookmarkAdmin)
