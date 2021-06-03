@@ -20,4 +20,12 @@ from board import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('list/', views.list),
+    path('write/', views.write_form),
+    path('insert/', views.insert),
+    path('download/', views.download),
+    path('detail/', views.detail),
+    path('update/', views.update),
+    path('delete/', views.delete),
+    path('reply_insert/', views.reply_insert),
+    path('reply_delete/', views.reply_delete),
 ]
