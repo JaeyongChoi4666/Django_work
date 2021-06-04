@@ -1,5 +1,7 @@
 from django.db import models
 from datetime import datetime
+from dask.dataframe.tests.test_rolling import idx
+from django.template.defaultfilters import title
 
 
 # Create your models here.
@@ -26,3 +28,9 @@ class Comment(models.Model):
     writer=models.CharField(null=False, max_length=50)
     content=models.TextField(null=False)
     post_date=models.DateTimeField(default=datetime.now,blank=True)
+    
+class Movie(models.Model):
+    idx=models.AutoField(primary_key=True)
+    title=models.CharField(null=False,max_length=200)
+    content=models.TextField(null=False)
+    point=models.IntegerField(default=0)

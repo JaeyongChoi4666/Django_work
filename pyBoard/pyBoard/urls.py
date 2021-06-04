@@ -28,4 +28,7 @@ urlpatterns = [
     path('delete/', views.delete),
     path('reply_insert/', views.reply_insert),
     path('reply_delete/', views.reply_delete),
+    path('json_test/', views.json_test),
+    
+    
 ]

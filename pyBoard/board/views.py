@@ -3,8 +3,11 @@ from board.models import Board, Comment
 from django.views.decorators.csrf import csrf_exempt
 import os
 from django.utils.http import urlquote
-from django.http.response import HttpResponse, HttpResponseRedirect
+from django.http.response import HttpResponse, HttpResponseRedirect,\
+    JsonResponse
 from django.db.models import Q
+import math
+from django.core.serializers.json import DjangoJSONEncoder
 
 UPLOAD_DIR='D:/upload/'
 
@@ -12,34 +15,53 @@ UPLOAD_DIR='D:/upload/'
 def list(request):
     try:
         search_option=request.POST['search_option']
+        search=request.POST['search']
+        start=int(request.GET['start'])
     except:
         search_option=""
-    
-    try:
-        search=request.POST['search']
-    except:
         search=""
+        start=0
     
+    page_size=10
+    block_size=10
+    end=start+page_size
+            
     if search_option=='all':
         boardCount=Board.objects.filter(Q(writer__contains=search)|
                                         Q(title__contains=search)|
                                         Q(content__contains=search)).count()
         boardList=Board.objects.filter(Q(writer__contains=search)|
                                         Q(title__contains=search)|
-                                        Q(content__contains=search)).order_by("-idx")                               
+                                        Q(content__contains=search)).order_by("-idx")[start:end]                               
     elif search_option=='writer':    
         boardCount=Board.objects.filter(Q(writer__contains=search)).count()
-        boardList=Board.objects.filter(Q(writer__contains=search)).order_by("-idx")
+        boardList=Board.objects.filter(Q(writer__contains=search)).order_by("-idx")[start:end]
     elif search_option=='title':    
         boardCount=Board.objects.filter(Q(title__contains=search)).count()  
-        boardList=Board.objects.filter(Q(title__contains=search)).order_by("-idx")  
+        boardList=Board.objects.filter(Q(title__contains=search)).order_by("-idx")[start:end]
     elif search_option=='content':    
         boardCount=Board.objects.filter(Q(content__contains=search)).count()
-        boardList=Board.objects.filter(Q(content__contains=search)).order_by("-idx")
+        boardList=Board.objects.filter(Q(content__contains=search)).order_by("-idx")[start:end]
     else:
-        boardCount=Board.objects.all.count()
-        boardList=Board.objects.all.count()
-                                    
+        boardCount=Board.objects.count()
+        boardList=Board.objects.order_by("-idx")[start:end]
+        
+    total_page=math.ceil(boardCount/page_size)
+    current_page=math.ceil((start+1)/page_size)
+    start_page=math.floor((current_page-1)/block_size)*block_size+1
+    end_page=start_page+block_size+1
+    
+    if end_page < total_page:
+        end_page=total_page
+        next_list=end_page*page_size
+    else:
+        next_list=0
+    
+    if start_page >= block_size:
+        prev_list=(start_page-2)*page_size
+    else:
+        prev_list=0
+    
     return render(request, "board/list.html", {"boardList":boardList,"boardCount":boardCount})
 
 def write_form(request):
@@ -134,3 +156,7 @@ def reply_delete(request):
     board_idx=request.GET['board_idx']
     Comment.objects.get(idx=id).delete()
     return HttpResponseRedirect('/detail?idx='+board_idx)
+
+def json_test(request):
+    boardList=Board.objects.all().order_by("-idx")
+    return JsonResponse({'name':'aaa','age':30})
