@@ -1,47 +1,47 @@
 -- VERSION_5
 -- START DISKCACHE_3
-C:\Users\ADMIN\django_work\.metadata\.plugins\org.eclipse.core.resources\.projects\mysite\com.python.pydev.analysis\v2_indexcache
-mysite.__init__|1622528606907946900|C:\Users\ADMIN\django_work\mysite\mysite\__init__.py
-bookmark.views|1622603700931556600|C:\Users\ADMIN\django_work\mysite\bookmark\views.py
-mysite.urls|1622604291176993200|C:\Users\ADMIN\django_work\mysite\mysite\urls.py
-mysite.wsgi|1622528606907946900|C:\Users\ADMIN\django_work\mysite\mysite\wsgi.py
-bookmark.migrations.0001_initial|1622532805575232000|C:\Users\ADMIN\django_work\mysite\bookmark\migrations\0001_initial.py
-bookmark.migrations.__init__|1622530433305781900|C:\Users\ADMIN\django_work\mysite\bookmark\migrations\__init__.py
-bookmark.models|1622532538202324700|C:\Users\ADMIN\django_work\mysite\bookmark\models.py
-manage|1622528606898969900|C:\Users\ADMIN\django_work\mysite\manage.py
-bookmark.tests|1622530433300785000|C:\Users\ADMIN\django_work\mysite\bookmark\tests.py
-bookmark.apps|1622530433298790400|C:\Users\ADMIN\django_work\mysite\bookmark\apps.py
-bookmark.admin|1622594588481356400|C:\Users\ADMIN\django_work\mysite\bookmark\admin.py
-mysite.settings|1622531539366420600|C:\Users\ADMIN\django_work\mysite\mysite\settings.py
-mysite.asgi|1622528606900987700|C:\Users\ADMIN\django_work\mysite\mysite\asgi.py
-bookmark.__init__|1622530433303777200|C:\Users\ADMIN\django_work\mysite\bookmark\__init__.py
+D:\work space\Django_work\.metadata\.plugins\org.eclipse.core.resources\.projects\mysite\com.python.pydev.analysis\v2_indexcache
+mysite.__init__|1623820740633756300|D:\work space\Django_work\mysite\mysite\__init__.py
+bookmark.views|1623820740629838300|D:\work space\Django_work\mysite\bookmark\views.py
+mysite.urls|1623820740635715000|D:\work space\Django_work\mysite\mysite\urls.py
+mysite.wsgi|1623820740636694600|D:\work space\Django_work\mysite\mysite\wsgi.py
+bookmark.migrations.0001_initial|1623820740620044400|D:\work space\Django_work\mysite\bookmark\migrations\0001_initial.py
+bookmark.migrations.__init__|1623820740621022100|D:\work space\Django_work\mysite\bookmark\migrations\__init__.py
+bookmark.models|1623820740621022100|D:\work space\Django_work\mysite\bookmark\models.py
+manage|1623820740632776000|D:\work space\Django_work\mysite\manage.py
+bookmark.tests|1623820740627880200|D:\work space\Django_work\mysite\bookmark\tests.py
+bookmark.apps|1623820740618083500|D:\work space\Django_work\mysite\bookmark\apps.py
+bookmark.admin|1623820740618083500|D:\work space\Django_work\mysite\bookmark\admin.py
+mysite.settings|1623820740635715000|D:\work space\Django_work\mysite\mysite\settings.py
+mysite.asgi|1623820740634736100|D:\work space\Django_work\mysite\mysite\asgi.py
+bookmark.__init__|1623820740617103600|D:\work space\Django_work\mysite\bookmark\__init__.py
 -- END DISKCACHE
 -- START DICTIONARY
 24
+19=D:\work space\Django_work\mysite\mysite\urls.py
 14=bookmark.views
-17=C:\Users\ADMIN\django_work\mysite\bookmark\migrations\0001_initial.py
-11=C:\Users\ADMIN\django_work\mysite\bookmark\admin.py
-19=C:\Users\ADMIN\django_work\mysite\mysite\urls.py
+15=D:\work space\Django_work\mysite\manage.py
 20=mysite.urls
 4=mysite.wsgi
 23=Migration
 24=BookmarkAdmin
-5=C:\Users\ADMIN\django_work\mysite\mysite\asgi.py
+5=D:\work space\Django_work\mysite\mysite\asgi.py
+1=D:\work space\Django_work\mysite\mysite\settings.py
+7=D:\work space\Django_work\mysite\bookmark\models.py
 18=bookmark.migrations.0001_initial
 22=BookmarkConfig
 8=bookmark.models
-7=C:\Users\ADMIN\django_work\mysite\bookmark\models.py
+9=D:\work space\Django_work\mysite\bookmark\apps.py
+11=D:\work space\Django_work\mysite\bookmark\admin.py
+13=D:\work space\Django_work\mysite\bookmark\views.py
 16=manage
+17=D:\work space\Django_work\mysite\bookmark\migrations\0001_initial.py
+3=D:\work space\Django_work\mysite\mysite\wsgi.py
 21=Bookmark
-1=C:\Users\ADMIN\django_work\mysite\mysite\settings.py
-3=C:\Users\ADMIN\django_work\mysite\mysite\wsgi.py
-15=C:\Users\ADMIN\django_work\mysite\manage.py
 10=bookmark.apps
 12=bookmark.admin
-13=C:\Users\ADMIN\django_work\mysite\bookmark\views.py
 2=mysite.settings
 6=mysite.asgi
-9=C:\Users\ADMIN\django_work\mysite\bookmark\apps.py
 -- END DICTIONARY
 -- START TREE 1
 23
